@@ -4,7 +4,7 @@ import bodyParser from 'body-parser';
 
 const app: Express = express();
 
-app.use(cors({ exposedHeaders: ['*', 'token'] }));
+// app.use(cors({ exposedHeaders: ['*', 'token'] }));
 app.options('*', cors());
 app.use(bodyParser.urlencoded());
 app.use(bodyParser.json());
